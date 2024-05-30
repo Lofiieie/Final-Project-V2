@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Media</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional CSS for the extended media page */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url("https://64.media.tumblr.com/2f5675cd88155c841310e330247be305/tumblr_nk2zn80NKp1t4nv93o7_500.gif");
+            background-size: cover;
+            background-position: center;
+            opacity: 1.0; /* Adjust the opacity to make the background more transparent */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            background-color: transparent;
+            border: 2px solid #ffffff;
+        }
+
+        nav li a.current-page {
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+
+        nav li a:hover {
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(10, 25, 47, 0.5); /* Adjust the background color with transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h1, h2, p {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .gallery-item {
+            margin-bottom: 20px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 5px;
+            opacity: 0.8; /* Adjust the opacity to make the GIFs more transparent */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #192a56;
+            color: #ffffff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="background"></div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-button">Home</a></li>
+            <li><a href="facts.html" class="nav-button">Facts</a></li>
+            <li><a href="media.html" class="nav-button current-page">Media</a></li>
+            <li><a href="newt.html" class="nav-button">Newt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Space Images & Videos</h1>
+
+        <section>
+
+            <h2>Video</h2>
+
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vGw0l8qLlOA" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <h2>Images</h2>
+
+            <div class="gallery">
+
+                <div class="gallery-item">
+                    <img src="https://cdn.pixabay.com/animation/2023/01/24/23/10/23-10-04-56_512.gif" alt="Space Animation 1">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://scitechdaily.com/images/Spiraling-Supermassive-Black-Holes.gif" alt="Space Animation 2">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://d2r55xnwy6nx47.cloudfront.net/uploads/2018/08/TidalDisruptions_A_1440x810.gif" alt="Space Animation 3">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2024 Space Website
+    </footer>
+
+</body>
+
+</html>

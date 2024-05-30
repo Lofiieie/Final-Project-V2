@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newt's Cosmic Corner</title>
+    <style>
+        /* CSS Styles */
+        /* Global CSS */
+        body {
+            background-color: #0a192f;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://www.icegif.com/wp-content/uploads/2023/02/icegif-497.gif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            opacity: 0.7; /* Adjusted opacity for better visibility */
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            padding-bottom: 80px; /* Added to prevent content from overlapping footer */
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h1, h2, p {
+            margin-top: 0;
+        }
+
+        h1, h2, p {
+            color: #ffffff; /* Changed text color to white */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Navigation Button Styles */
+        nav ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block; /* Display list items horizontally */
+            margin-right: 10px; /* Add some spacing between buttons */
+        }
+
+        .nav-button {
+            text-align: center;
+            font-size: 1rem;
+            line-height: clamp(2.875rem, 8vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            min-width: 10.875rem;
+            margin: auto;
+            color: #1a1a1a;
+            padding: 0 1.5rem;
+            box-sizing: border-box;
+            background-color: #fff;
+            border: 2px solid #1a1a1a;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s;
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .nav-button:before {
+            content: "";
+            width: 0%;
+            height: 100%;
+            background: #1a1a1a;
+            opacity: 1;
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s;
+            z-index: -1;
+            transition-delay: 0s, 0.3s;
+            border-radius: 5px;
+        }
+
+        .nav-button .cs-icon {
+            width: 1.5rem;
+            height: auto;
+        }
+
+        .nav-button .cs-icon path {
+            transition: fill 0.3s;
+        }
+
+        .nav-button:hover:before {
+            width: 100%;
+            transition-delay: 0.3s, 0s;
+        }
+
+        .nav-button:hover .cs-icon path {
+            fill: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #192a56;
+            color: #ffffff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-button">Home</a></li>
+            <li><a href="facts.html" class="nav-button">Facts</a></li>
+            <li><a href="media.html" class="nav-button">Media</a></li>
+            <li><a href="newt.html" class="nav-button">Newt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Newt's Cosmic Corner</h1>
+            <p>"The universe is a pretty big place. If it's just us, seems like an awful waste of space." - Carl Sagan</p>
+
+            <h2>Interview with Astronomer Jane Smith</h2>
+            <p><strong>Interviewer:</strong> What drew you to the field of astronomy?</p>
+            <p><strong>Jane Smith:</strong> Ever since I was a child, I've been fascinated by the stars and the mysteries of the cosmos. The vastness of the universe and the profound questions it raises about our existence have captivated me for as long as I can remember.</p>
+
+            <h2>Excerpt from "Unveiling the Secrets of Black Holes"</h2>
+            <p>"Black holes are among the most enigmatic and fascinating objects in the universe. These incredibly dense regions of spacetime have such powerful gravitational fields that nothing, not even light, can escape once it crosses the event horizon..."</p>
+
+            <h2>Quote from Physicist Stephen Hawking</h2>
+            <p>"We are just an advanced breed of primates on a minor planet orbiting an average star in the outer suburbs of an ordinary galaxy. But we can understand the universe. That makes us something very special."</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Space Website
+    </footer>
+</body>
+</html>
